@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background3"
     tools:context=".RegistroAlumnoActivity">
 
   <TextView
@@ -13,8 +14,12 @@
       android:layout_marginStart="16dp"
       android:layout_marginTop="134dp"
       android:text="N° Cuenta: "
+      android:textColor="#FFFFFF"
+      android:textColorHighlight="#FFFFFF"
+      android:textColorHint="#FFFFFF"
+      android:textColorLink="#FFFFFF"
       android:textSize="20sp"
-      android:textStyle="italic"
+      android:textStyle="bold"
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toTopOf="parent" />
 
@@ -25,8 +30,12 @@
       android:layout_marginStart="16dp"
       android:layout_marginTop="55dp"
       android:text="Nombre:"
+      android:textColor="#FFFFFF"
+      android:textColorHighlight="#FFFFFF"
+      android:textColorHint="#FFFFFF"
+      android:textColorLink="#FFFFFF"
       android:textSize="20sp"
-      android:textStyle="italic"
+      android:textStyle="bold"
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toBottomOf="@+id/txv" />
 
@@ -37,8 +46,12 @@
       android:layout_marginStart="16dp"
       android:layout_marginTop="55dp"
       android:text="Carrera:"
+      android:textColor="#FFFFFF"
+      android:textColorHighlight="#FFFFFF"
+      android:textColorHint="#FFFFFF"
+      android:textColorLink="#FFFFFF"
       android:textSize="20sp"
-      android:textStyle="italic"
+      android:textStyle="bold"
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
@@ -49,8 +62,12 @@
       android:layout_marginStart="16dp"
       android:layout_marginTop="55dp"
       android:text="Fecha ingreso:"
+      android:textColor="#FFFFFF"
+      android:textColorHighlight="#FFFFFF"
+      android:textColorHint="#FFFFFF"
+      android:textColorLink="#FFFFFF"
       android:textSize="20sp"
-      android:textStyle="italic"
+      android:textStyle="bold"
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
@@ -61,8 +78,12 @@
       android:layout_marginStart="16dp"
       android:layout_marginTop="55dp"
       android:text="Correo:"
+      android:textColor="#FFFFFF"
+      android:textColorHighlight="#FFFFFF"
+      android:textColorHint="#FFFFFF"
+      android:textColorLink="#FFFFFF"
       android:textSize="20sp"
-      android:textStyle="italic"
+      android:textStyle="bold"
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toBottomOf="@+id/textView5" />
 
@@ -76,6 +97,11 @@
       android:ems="10"
       android:hint="Ingrese numero cuenta"
       android:inputType="number"
+      android:textColor="#FFFFFF"
+      android:textColorHighlight="#FFFFFF"
+      android:textColorHint="#FFFFFF"
+      android:textColorLink="#FFFFFF"
+      android:textStyle="bold"
       app:layout_constraintBottom_toTopOf="@+id/textView4"
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintTop_toTopOf="parent" />
@@ -89,6 +115,11 @@
       android:ems="10"
       android:hint="Ingrese nombre"
       android:inputType="textPersonName"
+      android:textColor="#FFFFFF"
+      android:textColorHighlight="#FFFFFF"
+      android:textColorHint="#FFFFFF"
+      android:textColorLink="#FFFFFF"
+      android:textStyle="bold"
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintTop_toBottomOf="@+id/txtNumCuenta" />
 
@@ -101,6 +132,11 @@
       android:ems="10"
       android:hint="Ingrese carrera"
       android:inputType="textPersonName"
+      android:textColor="#FFFFFF"
+      android:textColorHighlight="#FFFFFF"
+      android:textColorHint="#FFFFFF"
+      android:textColorLink="#FFFFFF"
+      android:textStyle="bold"
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintTop_toBottomOf="@+id/txtNombre" />
 
@@ -113,6 +149,11 @@
       android:ems="10"
       android:hint="Ingrese correo"
       android:inputType="textEmailAddress"
+      android:textColor="#FFFFFF"
+      android:textColorHighlight="#FFFFFF"
+      android:textColorHint="#FFFFFF"
+      android:textColorLink="#FFFFFF"
+      android:textStyle="bold"
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintTop_toBottomOf="@+id/txtFecha" />
 
@@ -120,11 +161,13 @@
       android:id="@+id/txvTitulo"
       android:layout_width="0dp"
       android:layout_height="38dp"
-      android:background="#3949AB"
       android:text="Registro del Alumno"
       android:textAlignment="center"
       android:textAllCaps="false"
-      android:textColor="#C6C5C5"
+      android:textColor="#FFFFFF"
+      android:textColorHighlight="#FFFFFF"
+      android:textColorHint="#FFFFFF"
+      android:textColorLink="#FFFFFF"
       android:textSize="25dp"
       android:textStyle="bold|italic"
       app:layout_constraintEnd_toEndOf="parent"
@@ -137,6 +180,10 @@
       android:layout_height="36dp"
       android:layout_marginBottom="1dp"
       android:background="#00FFFFFF"
+      android:textColor="#FFFFFF"
+      android:textColorHighlight="#FFFFFF"
+      android:textColorHint="#FFFFFF"
+      android:textColorLink="#FFFFFF"
       app:icon="?attr/homeAsUpIndicator"
       app:iconTint="#C6C5C5"
       app:layout_constraintBottom_toBottomOf="@+id/textView"
@@ -149,11 +196,11 @@
       android:layout_height="wrap_content"
       android:layout_marginStart="70dp"
       android:layout_marginBottom="70dp"
-      android:backgroundTint="#3949AB"
+      android:backgroundTint="#1E5D75"
       android:text="Guardar"
-      android:textColor="#C6C5C5"
+      android:textColor="#FFFFFF"
       app:icon="?attr/actionModePasteDrawable"
-      app:iconTint="#C6C5C5"
+      app:iconTint="#FFFFFF"
       app:layout_constraintBottom_toBottomOf="parent"
       app:layout_constraintStart_toStartOf="parent" />
 
@@ -163,11 +210,11 @@
       android:layout_height="wrap_content"
       android:layout_marginStart="13dp"
       android:layout_marginBottom="70dp"
-      android:backgroundTint="#3949AB"
+      android:backgroundTint="#207A37"
       android:text="Enviar"
-      android:textColor="#C6C5C5"
+      android:textColor="#FFFFFF"
       app:icon="@android:drawable/stat_sys_upload"
-      app:iconTint="#C6C5C5"
+      app:iconTint="#FFFFFF"
       app:layout_constraintBottom_toBottomOf="parent"
       app:layout_constraintStart_toEndOf="@+id/btnGuardar" />
 
@@ -179,6 +226,11 @@
       android:ems="10"
       android:hint="Fecha de ingreso"
       android:inputType="date"
+      android:textColor="#FFFFFF"
+      android:textColorHighlight="#FFFFFF"
+      android:textColorHint="#FFFFFF"
+      android:textColorLink="#FFFFFF"
+      android:textStyle="bold"
       app:layout_constraintBaseline_toBaselineOf="@+id/textView5"
       app:layout_constraintEnd_toEndOf="parent" />
 

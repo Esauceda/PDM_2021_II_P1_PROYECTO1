@@ -4,17 +4,22 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background3"
     tools:context=".RegistroPrestamoActivity">
 
     <EditText
         android:id="@+id/txtNumeroPrestamo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
-        android:layout_marginEnd="21dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="17dp"
         android:ems="10"
         android:hint="Numero Prestamo"
         android:inputType="number"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtNumeroCuenta" />
 
@@ -23,21 +28,21 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginBottom="4dp"
-        android:text="N° prestamo:"
+        android:layout_marginTop="44dp"
+        android:text="N° Prestamo:"
+        android:textColor="#FFFFFF"
         android:textSize="20sp"
-        android:textStyle="italic"
-        app:layout_constraintBottom_toBottomOf="@+id/txtNumeroPrestamo"
-        app:layout_constraintStart_toStartOf="parent" />
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txvNumeroCuenta" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="0dp"
         android:layout_height="38dp"
-        android:background="#3949AB"
         android:text="Registro Prestamo"
         android:textAlignment="center"
-        android:textColor="#C6C5C5"
+        android:textColor="#FFFFFF"
         android:textSize="25dp"
         android:textStyle="bold|italic"
         app:layout_constraintEnd_toEndOf="parent"
@@ -49,14 +54,15 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="118dp"
-        android:layout_marginBottom="117dp"
+        android:layout_marginTop="78dp"
+        android:layout_marginBottom="75dp"
         android:text="N° Cuenta:"
+        android:textColor="#FFFFFF"
         android:textSize="20sp"
-        android:textStyle="italic"
-        app:layout_constraintBottom_toTopOf="@+id/txvNumeroLibro"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="@+id/txtNumeroPrestamo"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <TextView
         android:id="@+id/txvNumeroLibro"
@@ -65,31 +71,26 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="44dp"
         android:text="N° Libro:"
+        android:textColor="#FFFFFF"
         android:textSize="20sp"
-        android:textStyle="italic"
+        android:textStyle="bold|italic"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txvNumeroPrestamo" />
-
-    <TextView
-        android:id="@+id/txvFechaEntrega"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:text="Fecha Entrega:"
-        android:textSize="20sp"
-        android:textStyle="italic"
-        app:layout_constraintBaseline_toBaselineOf="@+id/txtDia"
-        app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
         android:id="@+id/txtNumeroCuenta"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="104dp"
-        android:layout_marginEnd="21dp"
+        android:layout_marginEnd="17dp"
         android:ems="10"
         android:hint="Numero Cuenta"
         android:inputType="number"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textColorLink="#FFFFFF"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -98,39 +99,27 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="26dp"
-        android:layout_marginEnd="21dp"
+        android:layout_marginEnd="17dp"
         android:ems="10"
         android:hint="Numero Libro"
         android:inputType="number"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtNumeroPrestamo" />
-
-    <EditText
-        android:id="@+id/txtDia"
-        android:layout_width="46dp"
-        android:layout_height="40dp"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="33dp"
-        android:layout_marginEnd="25dp"
-        android:layout_marginBottom="247dp"
-        android:ems="10"
-        android:hint="Dia"
-        android:inputType="date"
-        app:layout_constraintBottom_toTopOf="@+id/btnGuardar"
-        app:layout_constraintEnd_toStartOf="@+id/txtMes"
-        app:layout_constraintStart_toEndOf="@+id/txvFechaEntrega"
-        app:layout_constraintTop_toBottomOf="@+id/txtNumeroLibro" />
 
     <Button
         android:id="@+id/btnGuardar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="70dp"
-        android:backgroundTint="#3949AB"
+        android:backgroundTint="#1E5D75"
         android:text="Guardar"
-        android:textColor="#C6C5C5"
+        android:textColor="#FFFFFF"
         app:icon="?attr/actionModePasteDrawable"
-        app:iconTint="#C6C5C5"
+        app:iconTint="#FFFFFF"
         app:layout_constraintBaseline_toBaselineOf="@+id/btnEnviar"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -140,43 +129,13 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="13dp"
         android:layout_marginBottom="70dp"
-        android:backgroundTint="#3949AB"
+        android:backgroundTint="#207A37"
         android:text="Enviar"
-        android:textColor="#C6C5C5"
+        android:textColor="#FFFFFF"
         app:icon="@android:drawable/stat_sys_upload"
-        app:iconTint="#C6C5C5"
+        app:iconTint="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@+id/btnGuardar" />
-
-    <EditText
-        android:id="@+id/txtMes"
-        android:layout_width="59dp"
-        android:layout_height="40dp"
-        android:layout_marginTop="33dp"
-        android:layout_marginBottom="247dp"
-        android:ems="10"
-        android:hint="Mes"
-        android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/btnEnviar"
-        app:layout_constraintEnd_toEndOf="@+id/txtNumeroLibro"
-        app:layout_constraintStart_toStartOf="@+id/txtNumeroLibro"
-        app:layout_constraintTop_toBottomOf="@+id/txtNumeroLibro" />
-
-    <EditText
-        android:id="@+id/txtAño"
-        android:layout_width="47dp"
-        android:layout_height="40dp"
-        android:layout_marginStart="29dp"
-        android:layout_marginTop="33dp"
-        android:layout_marginEnd="22dp"
-        android:layout_marginBottom="365dp"
-        android:ems="10"
-        android:hint="Año"
-        android:inputType="number"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/txtMes"
-        app:layout_constraintTop_toBottomOf="@+id/txtNumeroLibro" />
 
     <Button
         android:id="@+id/btnRegresar"
@@ -189,5 +148,52 @@
         app:layout_constraintBottom_toBottomOf="@+id/textView"
         app:layout_constraintStart_toStartOf="@+id/textView"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtFechaPrestamo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="37dp"
+        android:layout_marginEnd="30dp"
+        android:hint="Fecha Entrega"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/txtFechaDevolucion"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnCalendario" />
+
+    <TextView
+        android:id="@+id/txtFechaDevolucion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="37dp"
+        android:layout_marginEnd="50dp"
+        android:text="Fecha Devolucion"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txtFechaPrestamo"
+        app:layout_constraintTop_toBottomOf="@+id/btnCalendario" />
+
+    <Button
+        android:id="@+id/btnCalendario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="34dp"
+        android:backgroundTint="#1E5D75"
+        android:text="Calendario"
+        android:textColor="#FFFFFF"
+        app:icon="@android:drawable/ic_menu_my_calendar"
+        app:iconTint="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtNumeroLibro" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

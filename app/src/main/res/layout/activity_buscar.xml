@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background3"
     tools:context=".BuscarAlumnoActivity">
 
 
@@ -11,10 +12,9 @@
         android:id="@+id/txvTitulo2"
         android:layout_width="0dp"
         android:layout_height="38dp"
-        android:background="#3949AB"
         android:text="Buscar Alumno"
         android:textAlignment="center"
-        android:textColor="#C6C5C5"
+        android:textColor="#FFFFFF"
         android:textSize="25dp"
         android:textStyle="bold|italic"
         app:layout_constraintEnd_toEndOf="parent"
@@ -28,8 +28,10 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="101dp"
-        android:text="Ingrese numero de cuenta: "
+        android:text="Ingrese Numero de Cuenta: "
+        android:textColor="#FFFFFF"
         android:textSize="20sp"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -38,7 +40,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="42dp"
+        android:textColor="#FFFFFF"
         android:textSize="20sp"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="@+id/txvNombre2"
         app:layout_constraintTop_toBottomOf="@+id/txvNombre2"
         tools:text="Carrera" />
@@ -49,7 +53,9 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="88dp"
         android:layout_marginTop="60dp"
+        android:textColor="#FFFFFF"
         android:textSize="20sp"
+        android:textStyle="bold"
         app:layout_constraintStart_toEndOf="@+id/txvNom"
         app:layout_constraintTop_toBottomOf="@+id/txtNumeroCuenta2"
         tools:text="Nombre" />
@@ -59,7 +65,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="61dp"
+        android:textColor="#FFFFFF"
         android:textSize="20sp"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="@+id/txvFechaIngreso2"
         app:layout_constraintTop_toBottomOf="@+id/txvFechaIngreso2"
         tools:text="Correo" />
@@ -70,7 +78,9 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="36dp"
         android:layout_marginTop="51dp"
+        android:textColor="#FFFFFF"
         android:textSize="20sp"
+        android:textStyle="bold"
         app:layout_constraintStart_toEndOf="@+id/textView16"
         app:layout_constraintTop_toBottomOf="@+id/txvCarrera2"
         tools:text="Fecha ingreso" />
@@ -82,8 +92,9 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="60dp"
         android:text="Nombre:"
+        android:textColor="#FFFFFF"
         android:textSize="20sp"
-        android:textStyle="italic"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtNumeroCuenta2" />
 
@@ -94,8 +105,9 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="42dp"
         android:text="Carrera:"
+        android:textColor="#FFFFFF"
         android:textSize="20sp"
-        android:textStyle="italic"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txvNom" />
 
@@ -105,8 +117,9 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:text="Fecha ingreso:"
+        android:textColor="#FFFFFF"
         android:textSize="20sp"
-        android:textStyle="italic"
+        android:textStyle="bold"
         app:layout_constraintBaseline_toBaselineOf="@+id/txvFechaIngreso2"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -117,8 +130,9 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="61dp"
         android:text="Correo:"
+        android:textColor="#FFFFFF"
         android:textSize="20sp"
-        android:textStyle="italic"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView16" />
 
@@ -129,9 +143,10 @@
         android:layout_marginBottom="1dp"
         android:background="#00EF5350"
         android:backgroundTint="#00FFFFFF"
-        android:textColor="#C6C5C5"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold|italic"
         app:icon="?attr/actionModeCloseDrawable"
-        app:iconTint="#C6C5C5"
+        app:iconTint="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="@+id/txvTitulo2"
         app:layout_constraintStart_toStartOf="@+id/txvTitulo2"
         app:layout_constraintTop_toTopOf="parent" />
@@ -141,11 +156,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="70dp"
-        android:backgroundTint="#3949AB"
+        android:backgroundTint="#1E5D75"
         android:text="Buscar"
-        android:textColor="#C6C5C5"
+        android:textColor="#FFFFFF"
         app:icon="?android:attr/actionModeWebSearchDrawable"
-        app:iconTint="#C6C5C5"
+        app:iconTint="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -159,6 +174,11 @@
         android:ems="10"
         android:hint="Ingrese Numero Cuenta:"
         android:inputType="number"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textColorLink="#FFFFFF"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txvNumeroCuenta" />
 </androidx.constraintlayout.widget.ConstraintLayout>

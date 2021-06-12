@@ -15,8 +15,8 @@ class BuscarPrestamoActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_mostrar_prestamo)
         inicalizar()
-        btnBuscar.setOnClickListener{buscar()}
-        btnRegresar.setOnClickListener{regresar()}
+        btnBuscar.setOnClickListener { buscar() }
+        btnRegresar.setOnClickListener { regresar() }
     }
 
     private fun regresar() {
@@ -24,22 +24,34 @@ class BuscarPrestamoActivity : AppCompatActivity() {
         startActivity(intentnRegistroPrestamo)
     }
 
-    private fun buscar(){
+    private fun buscar() {
 
-        var datoBuscado: Prestamo? = valores[txtIngresarNumeroCuenta.text.toString().toInt()]
-
-        if (datoBuscado == null){
-            Toast.makeText(applicationContext, "Esta nulo", Toast.LENGTH_LONG).show()
-        }else{
-            txvMostrarNumeroPrestamo.setText(datoBuscado.numeroPrestamo)
-            txvMostrarNumeroLibro.setText(datoBuscado.numeroLibro)
-            txvMostrarFechaEntrega.setText(datoBuscado.fechaEntrega)
-            txvMostrarFechaDevolucion.setText(datoBuscado.fechaDevolucion)
+        if (txtIngresarNumeroCuenta.text.isEmpty()) {
+            val toast = Toast.makeText(
+                applicationContext,
+                "El numero de cuenta está vacio",
+                Toast.LENGTH_LONG
+            ).show()
+        } else {
+            var datoBuscado: Prestamo? = valores[txtIngresarNumeroCuenta.text.toString().toInt()]
+            if (datoBuscado == null) {
+                val toast = Toast.makeText(
+                    applicationContext,
+                    "Este numero de cuenta no existe",
+                    Toast.LENGTH_LONG
+                )
+                toast.show()
+            } else {
+                txvMostrarNumeroPrestamo.setText(datoBuscado.numeroPrestamo)
+                txvMostrarNumeroLibro.setText(datoBuscado.numeroLibro)
+                txvMostrarFechaEntrega.setText(datoBuscado.fechaEntrega)
+                txvMostrarFechaDevolucion.setText(datoBuscado.fechaDevolucion)
+            }
         }
     }
 
     private fun inicalizar() {
         var intent = getIntent()
-        valores    = intent.getSerializableExtra("valores") as HashMap<Int, Prestamo>
+        valores = intent.getSerializableExtra("valores") as HashMap<Int, Prestamo>
     }
 }

@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background3"
     tools:context=".BuscarLibroActivity">
 
     <Button
@@ -11,8 +12,11 @@
         android:layout_width="111dp"
         android:layout_height="39dp"
         android:background="#00FFFFFF"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#FFFFFF"
+        android:textColorHint="#FFFFFF"
         app:icon="?attr/homeAsUpIndicator"
-        app:iconTint="#C6C5C5"
+        app:iconTint="#FFFFFF"
         app:layout_constraintStart_toStartOf="@+id/txvRegistroDeLibro"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -20,10 +24,11 @@
         android:id="@+id/txvBuscarLibro"
         android:layout_width="0dp"
         android:layout_height="38dp"
-        android:background="#3949AB"
         android:text="Buscar Libro"
         android:textAlignment="center"
-        android:textColor="#C6C5C5"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#FFFFFF"
+        android:textColorHint="#FFFFFF"
         android:textSize="25sp"
         android:textStyle="bold|italic"
         app:layout_constraintEnd_toEndOf="parent"
@@ -37,7 +42,11 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="98dp"
         android:text="Ingrese el Numero de Libro:"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#FFFFFF"
+        android:textColorLink="#FFFFFF"
         android:textSize="20sp"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -50,6 +59,11 @@
         android:ems="10"
         android:hint="Ingrese número del libro"
         android:inputType="number"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textColorLink="#FFFFFF"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txvIngreseNumeroDeLibro" />
 
@@ -59,7 +73,11 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="23dp"
         android:text="Nombre de libro"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#FFFFFF"
+        android:textColorLink="#FFFFFF"
         android:textSize="20sp"
+        android:textStyle="bold"
         app:layout_constraintStart_toEndOf="@+id/txtIngreseNumeroDeLibro"
         app:layout_constraintTop_toBottomOf="@+id/txtIngreseNumeroDeLibro" />
 
@@ -69,7 +87,11 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="44dp"
         android:text="Autor"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#FFFFFF"
+        android:textColorLink="#FFFFFF"
         android:textSize="20sp"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="@+id/txvMostrarNombreDeLibro"
         app:layout_constraintTop_toBottomOf="@+id/txvMostrarNombreDeLibro" />
 
@@ -80,7 +102,11 @@
         android:layout_marginStart="11dp"
         android:layout_marginTop="53dp"
         android:text="Fecha"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#FFFFFF"
+        android:textColorLink="#FFFFFF"
         android:textSize="20sp"
+        android:textStyle="bold"
         app:layout_constraintStart_toEndOf="@+id/txvFechaDePublicacion2"
         app:layout_constraintTop_toBottomOf="@+id/txvMostrarEditorial" />
 
@@ -90,7 +116,11 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="53dp"
         android:text="Editorial"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#FFFFFF"
+        android:textColorLink="#FFFFFF"
         android:textSize="20sp"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="@+id/txvMostrarFechaDePublicacion"
         app:layout_constraintTop_toBottomOf="@+id/txvMostrarAutor" />
 
@@ -101,7 +131,11 @@
         android:layout_marginStart="20dp"
         android:layout_marginTop="53dp"
         android:text="Editorial:"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#FFFFFF"
+        android:textColorLink="#FFFFFF"
         android:textSize="20sp"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txvAutor2" />
 
@@ -111,7 +145,11 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:text="Fecha de publicacion:"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#FFFFFF"
+        android:textColorLink="#FFFFFF"
         android:textSize="20sp"
+        android:textStyle="bold"
         app:layout_constraintBaseline_toBaselineOf="@+id/txvMostrarFechaDePublicacion"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -122,7 +160,11 @@
         android:layout_marginStart="20dp"
         android:layout_marginTop="44dp"
         android:text="Autor:"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#FFFFFF"
+        android:textColorLink="#FFFFFF"
         android:textSize="20sp"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txvNombreDeLibro2" />
 
@@ -133,7 +175,11 @@
         android:layout_marginStart="20dp"
         android:layout_marginTop="23dp"
         android:text="Nombre de libro:"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#FFFFFF"
+        android:textColorLink="#FFFFFF"
         android:textSize="20sp"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtIngreseNumeroDeLibro" />
 
@@ -142,11 +188,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="70dp"
-        android:backgroundTint="#3949AB"
+        android:backgroundTint="#1E5D75"
         android:text="Buscar"
-        android:textColor="#C6C5C5"
+        android:textColor="#FFFFFF"
         app:icon="?android:attr/actionModeWebSearchDrawable"
-        app:iconTint="#C6C5C5"
+        app:iconTint="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"

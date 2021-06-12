@@ -4,17 +4,30 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background3"
     tools:context=".RegistroLibroActivity">
+
+    <Button
+        android:id="@+id/btnRegresar"
+        android:layout_width="84dp"
+        android:layout_height="39dp"
+        android:layout_marginBottom="62dp"
+        android:background="#00FFFFFF"
+        android:textColor="#FFFFFF"
+        app:icon="?attr/homeAsUpIndicator"
+        app:iconTint="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/txvIngreseNumeroCuenta"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/txvRegistroDeLibro"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginBottom="1dp"
-        android:background="#3949AB"
         android:text="Registro de Libro"
         android:textAlignment="center"
-        android:textColor="#C6C5C5"
+        android:textColor="#FFFFFF"
         android:textSize="25sp"
         android:textStyle="bold|italic"
         app:layout_constraintBottom_toBottomOf="@+id/btnRegresar"
@@ -27,32 +40,32 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:layout_marginEnd="11dp"
+        android:layout_marginEnd="9dp"
         android:ems="10"
         android:hint="Ingrese fecha de publicacion"
         android:inputType="date"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textColorLink="#FFFFFF"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtEditorial" />
-
-    <TextView
-        android:id="@+id/txvAutor"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="45dp"
-        android:text="Autor:"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txvNombreDeLibro" />
 
     <EditText
         android:id="@+id/txtNombreDeLibro"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:layout_marginEnd="11dp"
+        android:layout_marginEnd="9dp"
         android:ems="10"
         android:hint="Ingrese nombre del libro"
         android:inputType="textPersonName"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textColorLink="#FFFFFF"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtNumeroDeLibro" />
 
@@ -60,51 +73,91 @@
         android:id="@+id/txvNombreDeLibro"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="45dp"
+        android:layout_marginStart="8dp"
         android:text="Nombre de libro:"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txvNumeroDeLibro" />
-
-    <TextView
-        android:id="@+id/txvEditorial"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="45dp"
-        android:text="Editorial:"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txvAutor" />
-
-    <TextView
-        android:id="@+id/txvFechaDePublicacion"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="45dp"
-        android:text="Fecha de publicación:"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txvEditorial" />
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textColorLink="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txtNombreDeLibro"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/txvNumeroDeLibro"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="152dp"
+        android:layout_marginStart="8dp"
         android:text="Numero de libro:"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textColorLink="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txtNumeroDeLibro"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/txvEditorial"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="38dp"
+        android:text="Editorial:"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textColorLink="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/txvAutor" />
+
+    <TextView
+        android:id="@+id/txvAutor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="38dp"
+        android:text="Autor:"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txvNombreDeLibro" />
+
+    <TextView
+        android:id="@+id/txvFechaDePublicacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="Fecha publicación:"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textColorLink="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txtFechaDePublicacion"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
         android:id="@+id/txtEditorial"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:layout_marginEnd="11dp"
+        android:layout_marginEnd="9dp"
         android:ems="10"
         android:hint="Ingrese la editorial"
         android:inputType="textPersonName"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textColorLink="#FFFFFF"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtAutor" />
 
@@ -112,34 +165,35 @@
         android:id="@+id/txtNumeroDeLibro"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="11dp"
+        android:layout_marginTop="149dp"
+        android:layout_marginEnd="9dp"
         android:ems="10"
         android:hint="Ingrese numero de libro"
         android:inputType="number"
-        app:layout_constraintBaseline_toBaselineOf="@+id/txvNumeroDeLibro"
-        app:layout_constraintEnd_toEndOf="parent" />
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textColorLink="#FFFFFF"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/txtAutor"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="11dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="9dp"
         android:ems="10"
         android:hint="Ingrese autor"
         android:inputType="textPersonName"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textColorLink="#FFFFFF"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtNombreDeLibro" />
-
-    <Button
-        android:id="@+id/btnRegresar"
-        android:layout_width="111dp"
-        android:layout_height="39dp"
-        android:background="#00FFFFFF"
-        app:icon="?attr/homeAsUpIndicator"
-        app:iconTint="#C6C5C5"
-        app:layout_constraintStart_toStartOf="@+id/txvRegistroDeLibro"
-        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/btnEnviar"
@@ -147,11 +201,11 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="13dp"
         android:layout_marginBottom="70dp"
-        android:backgroundTint="#3949AB"
+        android:backgroundTint="#207A37"
         android:text="Enviar"
-        android:textColor="#C6C5C5"
+        android:textColor="#FFFFFF"
         app:icon="@android:drawable/stat_sys_upload"
-        app:iconTint="#C6C5C5"
+        app:iconTint="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@+id/btnGuardar" />
 
@@ -160,11 +214,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="70dp"
-        android:backgroundTint="#3949AB"
+        android:backgroundTint="#1E5D75"
         android:text="Guardar"
-        android:textColor="#C6C5C5"
+        android:textColor="#FFFFFF"
         app:icon="?attr/actionModePasteDrawable"
-        app:iconTint="#C6C5C5"
+        app:iconTint="#FFFFFF"
         app:layout_constraintBaseline_toBaselineOf="@+id/btnEnviar"
         app:layout_constraintStart_toStartOf="parent" />
 

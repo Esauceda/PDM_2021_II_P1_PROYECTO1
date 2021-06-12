@@ -23,15 +23,18 @@ class BuscarAlumnoActivity : AppCompatActivity() {
     }
 
     private fun busqueda() {
-        var datoBuscado : Alumnos? = valores2[txtNumeroCuenta2.text.toString().toInt()]
-
-        if (datoBuscado == null){
-            Toast.makeText(applicationContext, "Esta nulo", Toast.LENGTH_LONG).show()
+        if (txtNumeroCuenta2.text.isEmpty()){
+            val toast = Toast.makeText(applicationContext, "El numero de cuenta esta vacio", Toast.LENGTH_LONG).show()
         }else{
-            txvNombre2.setText(datoBuscado.Nombre)
-            txvCarrera2.setText(datoBuscado.Carrera)
-            txvFechaIngreso2.setText(datoBuscado.FechaIngreso)
-            txvCorreo2.setText(datoBuscado.Correo)
+            var datoBuscado : Alumnos? = valores2[txtNumeroCuenta2.text.toString().toInt()]
+            if (datoBuscado == null){
+                Toast.makeText(applicationContext, "El numero de cuenta no esta registrado", Toast.LENGTH_LONG).show()
+            }else{
+                txvNombre2.setText(datoBuscado.Nombre)
+                txvCarrera2.setText(datoBuscado.Carrera)
+                txvFechaIngreso2.setText(datoBuscado.FechaIngreso)
+                txvCorreo2.setText(datoBuscado.Correo)
+            }
         }
     }
 

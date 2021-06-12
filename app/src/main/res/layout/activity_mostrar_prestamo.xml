@@ -4,16 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background3"
     tools:context=".BuscarPrestamoActivity">
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="0dp"
         android:layout_height="38dp"
-        android:background="#3949AB"
         android:text="Buscar Prestamo"
         android:textAlignment="center"
-        android:textColor="#C6C5C5"
+        android:textColor="#FFFFFF"
         android:textSize="25sp"
         android:textStyle="bold|italic"
         app:layout_constraintEnd_toEndOf="parent"
@@ -27,8 +27,12 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="101dp"
         android:text="Ingrese Numero Cuenta:"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textColorLink="#FFFFFF"
         android:textSize="20sp"
-        android:textStyle="italic"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -39,8 +43,12 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="245dp"
         android:text="N° prestamo:"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textColorLink="#FFFFFF"
         android:textSize="20sp"
-        android:textStyle="italic"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -51,8 +59,12 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="32dp"
         android:text="N° Libro:"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textColorLink="#FFFFFF"
         android:textSize="20sp"
-        android:textStyle="italic"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txvNumeroPrestamo2" />
 
@@ -63,8 +75,12 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="39dp"
         android:text="Fecha Entrega:"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textColorLink="#FFFFFF"
         android:textSize="20sp"
-        android:textStyle="italic"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txvNumeroLibro2" />
 
@@ -74,8 +90,12 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:text="Fecha Devolucion"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textColorLink="#FFFFFF"
         android:textSize="20sp"
-        android:textStyle="italic"
+        android:textStyle="bold"
         app:layout_constraintBaseline_toBaselineOf="@+id/txvMostrarFechaDevolucion"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -87,7 +107,13 @@
         android:layout_marginTop="58dp"
         android:layout_marginBottom="68dp"
         android:ems="10"
+        android:hint="Numero Cuenta"
         android:inputType="number"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textColorLink="#FFFFFF"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/txvNumeroPrestamo2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/txvIngreseNumeroCuenta" />
@@ -99,7 +125,12 @@
         android:layout_marginTop="117dp"
         android:layout_marginBottom="119dp"
         android:text="Numero Prestamo"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textColorLink="#FFFFFF"
         android:textSize="20sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/txvMostrarFechaEntrega"
         app:layout_constraintStart_toStartOf="@+id/txvMostrarNumeroLibro"
         app:layout_constraintTop_toBottomOf="@+id/txvIngreseNumeroCuenta" />
@@ -110,7 +141,12 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="26dp"
         android:text="Numero Libro"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textColorLink="#FFFFFF"
         android:textSize="20sp"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="@+id/txvMostrarFechaEntrega"
         app:layout_constraintTop_toBottomOf="@+id/txvMostrarNumeroPrestamo" />
 
@@ -120,7 +156,12 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="50dp"
         android:text="Fecha Entrega"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textColorLink="#FFFFFF"
         android:textSize="20sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/txvMostrarFechaDevolucion"
         app:layout_constraintStart_toStartOf="@+id/txvMostrarFechaDevolucion" />
 
@@ -131,7 +172,12 @@
         android:layout_marginTop="50dp"
         android:layout_marginEnd="38dp"
         android:text="Fecha Devolucion"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textColorLink="#FFFFFF"
         android:textSize="20sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txvFechaEntrega2" />
 
@@ -140,11 +186,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="70dp"
-        android:backgroundTint="#3949AB"
+        android:backgroundTint="#1E5D75"
         android:text="Buscar"
-        android:textColor="#C6C5C5"
+        android:textColor="#FFFFFF"
         app:icon="?android:attr/actionModeWebSearchDrawable"
-        app:iconTint="#C6C5C5"
+        app:iconTint="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -155,8 +201,9 @@
         android:layout_height="39dp"
         android:layout_marginBottom="62dp"
         android:background="#00FFFFFF"
+        android:textColor="#FFFFFF"
         app:icon="?attr/homeAsUpIndicator"
-        app:iconTint="#C6C5C5"
+        app:iconTint="#FFFFFF"
         app:layout_constraintBottom_toTopOf="@+id/txvIngreseNumeroCuenta"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
