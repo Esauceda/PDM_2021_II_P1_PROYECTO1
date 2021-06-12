@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="hn.edu.ujcv.pmd_2021_ii_p1_proyecto1">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.PMD_2021_II_P1_PROYECTO1_PARTE2">
+        <activity android:name="hn.edu.ujcv.pmd_2021_ii_p1_proyecto1.BuscarAlumnoActivity"></activity>
+        <activity android:name="hn.edu.ujcv.pmd_2021_ii_p1_proyecto1.RegistroAlumnoActivity" />
+        <activity android:name="hn.edu.ujcv.pmd_2021_ii_p1_proyecto1.RegistroLibroActivity" />
+        <activity android:name="hn.edu.ujcv.pmd_2021_ii_p1_proyecto1.BuscarLibroActivity" />
+        <activity android:name="hn.edu.ujcv.pmd_2021_ii_p1_proyecto1.RegistroPrestamoActivity" />
+        <activity android:name="hn.edu.ujcv.pmd_2021_ii_p1_proyecto1.BuscarPrestamoActivity" />
+        <activity android:name="hn.edu.ujcv.pmd_2021_ii_p1_proyecto1.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

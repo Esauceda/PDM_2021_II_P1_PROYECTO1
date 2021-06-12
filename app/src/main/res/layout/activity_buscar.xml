@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BuscarAlumnoActivity">
+
+
+    <TextView
+        android:id="@+id/txvTitulo2"
+        android:layout_width="0dp"
+        android:layout_height="38dp"
+        android:background="#3949AB"
+        android:text="Buscar Alumno"
+        android:textAlignment="center"
+        android:textColor="#C6C5C5"
+        android:textSize="25dp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/txvNumeroCuenta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="101dp"
+        android:text="Ingrese numero de cuenta: "
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txvCarrera2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="42dp"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/txvNombre2"
+        app:layout_constraintTop_toBottomOf="@+id/txvNombre2"
+        tools:text="Carrera" />
+
+    <TextView
+        android:id="@+id/txvNombre2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="60dp"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/txvNom"
+        app:layout_constraintTop_toBottomOf="@+id/txtNumeroCuenta2"
+        tools:text="Nombre" />
+
+    <TextView
+        android:id="@+id/txvCorreo2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="61dp"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/txvFechaIngreso2"
+        app:layout_constraintTop_toBottomOf="@+id/txvFechaIngreso2"
+        tools:text="Correo" />
+
+    <TextView
+        android:id="@+id/txvFechaIngreso2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="51dp"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/textView16"
+        app:layout_constraintTop_toBottomOf="@+id/txvCarrera2"
+        tools:text="Fecha ingreso" />
+
+    <TextView
+        android:id="@+id/txvNom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="60dp"
+        android:text="Nombre:"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtNumeroCuenta2" />
+
+    <TextView
+        android:id="@+id/txvCar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="42dp"
+        android:text="Carrera:"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txvNom" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Fecha ingreso:"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txvFechaIngreso2"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="61dp"
+        android:text="Correo:"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView16" />
+
+    <Button
+        android:id="@+id/btnRegresar2"
+        android:layout_width="86dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="1dp"
+        android:background="#00EF5350"
+        android:backgroundTint="#00FFFFFF"
+        android:textColor="#C6C5C5"
+        app:icon="?attr/actionModeCloseDrawable"
+        app:iconTint="#C6C5C5"
+        app:layout_constraintBottom_toBottomOf="@+id/txvTitulo2"
+        app:layout_constraintStart_toStartOf="@+id/txvTitulo2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnBuscar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="70dp"
+        android:backgroundTint="#3949AB"
+        android:text="Buscar"
+        android:textColor="#C6C5C5"
+        app:icon="?android:attr/actionModeWebSearchDrawable"
+        app:iconTint="#C6C5C5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/txtNumeroCuenta2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:hint="Ingrese Numero Cuenta:"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txvNumeroCuenta" />
+</androidx.constraintlayout.widget.ConstraintLayout>

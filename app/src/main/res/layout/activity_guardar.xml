@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegistroAlumnoActivity">
+
+  <TextView
+      android:id="@+id/txv"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="16dp"
+      android:layout_marginTop="134dp"
+      android:text="N° Cuenta: "
+      android:textSize="20sp"
+      android:textStyle="italic"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+  <TextView
+      android:id="@+id/textView3"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="16dp"
+      android:layout_marginTop="55dp"
+      android:text="Nombre:"
+      android:textSize="20sp"
+      android:textStyle="italic"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/txv" />
+
+  <TextView
+      android:id="@+id/textView4"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="16dp"
+      android:layout_marginTop="55dp"
+      android:text="Carrera:"
+      android:textSize="20sp"
+      android:textStyle="italic"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+  <TextView
+      android:id="@+id/textView5"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="16dp"
+      android:layout_marginTop="55dp"
+      android:text="Fecha ingreso:"
+      android:textSize="20sp"
+      android:textStyle="italic"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+  <TextView
+      android:id="@+id/textView6"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="16dp"
+      android:layout_marginTop="55dp"
+      android:text="Correo:"
+      android:textSize="20sp"
+      android:textStyle="italic"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+  <EditText
+      android:id="@+id/txtNumCuenta"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="126dp"
+      android:layout_marginEnd="13dp"
+      android:layout_marginBottom="127dp"
+      android:ems="10"
+      android:hint="Ingrese numero cuenta"
+      android:inputType="number"
+      app:layout_constraintBottom_toTopOf="@+id/textView4"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+  <EditText
+      android:id="@+id/txtNombre"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="37dp"
+      android:layout_marginEnd="13dp"
+      android:ems="10"
+      android:hint="Ingrese nombre"
+      android:inputType="textPersonName"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/txtNumCuenta" />
+
+  <EditText
+      android:id="@+id/txtCarrera"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="37dp"
+      android:layout_marginEnd="13dp"
+      android:ems="10"
+      android:hint="Ingrese carrera"
+      android:inputType="textPersonName"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/txtNombre" />
+
+  <EditText
+      android:id="@+id/txtCorreo"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="37dp"
+      android:layout_marginEnd="13dp"
+      android:ems="10"
+      android:hint="Ingrese correo"
+      android:inputType="textEmailAddress"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/txtFecha" />
+
+  <TextView
+      android:id="@+id/txvTitulo"
+      android:layout_width="0dp"
+      android:layout_height="38dp"
+      android:background="#3949AB"
+      android:text="Registro del Alumno"
+      android:textAlignment="center"
+      android:textAllCaps="false"
+      android:textColor="#C6C5C5"
+      android:textSize="25dp"
+      android:textStyle="bold|italic"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+  <Button
+      android:id="@+id/btnRegresar"
+      android:layout_width="85dp"
+      android:layout_height="36dp"
+      android:layout_marginBottom="1dp"
+      android:background="#00FFFFFF"
+      app:icon="?attr/homeAsUpIndicator"
+      app:iconTint="#C6C5C5"
+      app:layout_constraintBottom_toBottomOf="@+id/textView"
+      app:layout_constraintStart_toStartOf="@+id/textView"
+      app:layout_constraintTop_toTopOf="parent" />
+
+  <Button
+      android:id="@+id/btnGuardar"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="70dp"
+      android:layout_marginBottom="70dp"
+      android:backgroundTint="#3949AB"
+      android:text="Guardar"
+      android:textColor="#C6C5C5"
+      app:icon="?attr/actionModePasteDrawable"
+      app:iconTint="#C6C5C5"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintStart_toStartOf="parent" />
+
+  <Button
+      android:id="@+id/btnEnviar"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="13dp"
+      android:layout_marginBottom="70dp"
+      android:backgroundTint="#3949AB"
+      android:text="Enviar"
+      android:textColor="#C6C5C5"
+      app:icon="@android:drawable/stat_sys_upload"
+      app:iconTint="#C6C5C5"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintStart_toEndOf="@+id/btnGuardar" />
+
+  <EditText
+      android:id="@+id/txtFecha"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginEnd="13dp"
+      android:ems="10"
+      android:hint="Fecha de ingreso"
+      android:inputType="date"
+      app:layout_constraintBaseline_toBaselineOf="@+id/textView5"
+      app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

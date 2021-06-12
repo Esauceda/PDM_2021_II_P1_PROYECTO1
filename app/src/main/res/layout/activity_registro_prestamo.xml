@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegistroPrestamoActivity">
+
+    <EditText
+        android:id="@+id/txtNumeroPrestamo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="21dp"
+        android:ems="10"
+        android:hint="Numero Prestamo"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtNumeroCuenta" />
+
+    <TextView
+        android:id="@+id/txvNumeroPrestamo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="4dp"
+        android:text="N° prestamo:"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="@+id/txtNumeroPrestamo"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="0dp"
+        android:layout_height="38dp"
+        android:background="#3949AB"
+        android:text="Registro Prestamo"
+        android:textAlignment="center"
+        android:textColor="#C6C5C5"
+        android:textSize="25dp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txvNumeroCuenta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="118dp"
+        android:layout_marginBottom="117dp"
+        android:text="N° Cuenta:"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toTopOf="@+id/txvNumeroLibro"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txvNumeroLibro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="44dp"
+        android:text="N° Libro:"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txvNumeroPrestamo" />
+
+    <TextView
+        android:id="@+id/txvFechaEntrega"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Fecha Entrega:"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txtDia"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/txtNumeroCuenta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="104dp"
+        android:layout_marginEnd="21dp"
+        android:ems="10"
+        android:hint="Numero Cuenta"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txtNumeroLibro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="21dp"
+        android:ems="10"
+        android:hint="Numero Libro"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtNumeroPrestamo" />
+
+    <EditText
+        android:id="@+id/txtDia"
+        android:layout_width="46dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="33dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="247dp"
+        android:ems="10"
+        android:hint="Dia"
+        android:inputType="date"
+        app:layout_constraintBottom_toTopOf="@+id/btnGuardar"
+        app:layout_constraintEnd_toStartOf="@+id/txtMes"
+        app:layout_constraintStart_toEndOf="@+id/txvFechaEntrega"
+        app:layout_constraintTop_toBottomOf="@+id/txtNumeroLibro" />
+
+    <Button
+        android:id="@+id/btnGuardar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="70dp"
+        android:backgroundTint="#3949AB"
+        android:text="Guardar"
+        android:textColor="#C6C5C5"
+        app:icon="?attr/actionModePasteDrawable"
+        app:iconTint="#C6C5C5"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btnEnviar"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnEnviar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="13dp"
+        android:layout_marginBottom="70dp"
+        android:backgroundTint="#3949AB"
+        android:text="Enviar"
+        android:textColor="#C6C5C5"
+        app:icon="@android:drawable/stat_sys_upload"
+        app:iconTint="#C6C5C5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnGuardar" />
+
+    <EditText
+        android:id="@+id/txtMes"
+        android:layout_width="59dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="33dp"
+        android:layout_marginBottom="247dp"
+        android:ems="10"
+        android:hint="Mes"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/btnEnviar"
+        app:layout_constraintEnd_toEndOf="@+id/txtNumeroLibro"
+        app:layout_constraintStart_toStartOf="@+id/txtNumeroLibro"
+        app:layout_constraintTop_toBottomOf="@+id/txtNumeroLibro" />
+
+    <EditText
+        android:id="@+id/txtAño"
+        android:layout_width="47dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="33dp"
+        android:layout_marginEnd="22dp"
+        android:layout_marginBottom="365dp"
+        android:ems="10"
+        android:hint="Año"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txtMes"
+        app:layout_constraintTop_toBottomOf="@+id/txtNumeroLibro" />
+
+    <Button
+        android:id="@+id/btnRegresar"
+        android:layout_width="86dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="1dp"
+        android:background="#00FFFFFF"
+        app:icon="?attr/homeAsUpIndicator"
+        app:iconTint="#C6C5C5"
+        app:layout_constraintBottom_toBottomOf="@+id/textView"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BuscarPrestamoActivity">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="0dp"
+        android:layout_height="38dp"
+        android:background="#3949AB"
+        android:text="Buscar Prestamo"
+        android:textAlignment="center"
+        android:textColor="#C6C5C5"
+        android:textSize="25sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txvIngreseNumeroCuenta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="101dp"
+        android:text="Ingrese Numero Cuenta:"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txvNumeroPrestamo2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="245dp"
+        android:text="N° prestamo:"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txvNumeroLibro2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:text="N° Libro:"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txvNumeroPrestamo2" />
+
+    <TextView
+        android:id="@+id/txvFechaEntrega2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="39dp"
+        android:text="Fecha Entrega:"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txvNumeroLibro2" />
+
+    <TextView
+        android:id="@+id/txvFechaDevolucion2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Fecha Devolucion"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txvMostrarFechaDevolucion"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/txtIngresarNumeroCuenta"
+        android:layout_width="173dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="58dp"
+        android:layout_marginBottom="68dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="@+id/txvNumeroPrestamo2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/txvIngreseNumeroCuenta" />
+
+    <TextView
+        android:id="@+id/txvMostrarNumeroPrestamo"
+        android:layout_width="166dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="117dp"
+        android:layout_marginBottom="119dp"
+        android:text="Numero Prestamo"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/txvMostrarFechaEntrega"
+        app:layout_constraintStart_toStartOf="@+id/txvMostrarNumeroLibro"
+        app:layout_constraintTop_toBottomOf="@+id/txvIngreseNumeroCuenta" />
+
+    <TextView
+        android:id="@+id/txvMostrarNumeroLibro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:text="Numero Libro"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/txvMostrarFechaEntrega"
+        app:layout_constraintTop_toBottomOf="@+id/txvMostrarNumeroPrestamo" />
+
+    <TextView
+        android:id="@+id/txvMostrarFechaEntrega"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:text="Fecha Entrega"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/txvMostrarFechaDevolucion"
+        app:layout_constraintStart_toStartOf="@+id/txvMostrarFechaDevolucion" />
+
+    <TextView
+        android:id="@+id/txvMostrarFechaDevolucion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="38dp"
+        android:text="Fecha Devolucion"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txvFechaEntrega2" />
+
+    <Button
+        android:id="@+id/btnBuscar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="70dp"
+        android:backgroundTint="#3949AB"
+        android:text="Buscar"
+        android:textColor="#C6C5C5"
+        app:icon="?android:attr/actionModeWebSearchDrawable"
+        app:iconTint="#C6C5C5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnRegresar"
+        android:layout_width="84dp"
+        android:layout_height="39dp"
+        android:layout_marginBottom="62dp"
+        android:background="#00FFFFFF"
+        app:icon="?attr/homeAsUpIndicator"
+        app:iconTint="#C6C5C5"
+        app:layout_constraintBottom_toTopOf="@+id/txvIngreseNumeroCuenta"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BuscarLibroActivity">
+
+    <Button
+        android:id="@+id/btnRegresar3"
+        android:layout_width="111dp"
+        android:layout_height="39dp"
+        android:background="#00FFFFFF"
+        app:icon="?attr/homeAsUpIndicator"
+        app:iconTint="#C6C5C5"
+        app:layout_constraintStart_toStartOf="@+id/txvRegistroDeLibro"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txvBuscarLibro"
+        android:layout_width="0dp"
+        android:layout_height="38dp"
+        android:background="#3949AB"
+        android:text="Buscar Libro"
+        android:textAlignment="center"
+        android:textColor="#C6C5C5"
+        android:textSize="25sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txvIngreseNumeroDeLibro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="98dp"
+        android:text="Ingrese el Numero de Libro:"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txtIngreseNumeroDeLibro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="29dp"
+        android:ems="10"
+        android:hint="Ingrese número del libro"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txvIngreseNumeroDeLibro" />
+
+    <TextView
+        android:id="@+id/txvMostrarNombreDeLibro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="23dp"
+        android:text="Nombre de libro"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/txtIngreseNumeroDeLibro"
+        app:layout_constraintTop_toBottomOf="@+id/txtIngreseNumeroDeLibro" />
+
+    <TextView
+        android:id="@+id/txvMostrarAutor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:text="Autor"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/txvMostrarNombreDeLibro"
+        app:layout_constraintTop_toBottomOf="@+id/txvMostrarNombreDeLibro" />
+
+    <TextView
+        android:id="@+id/txvMostrarFechaDePublicacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="53dp"
+        android:text="Fecha"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/txvFechaDePublicacion2"
+        app:layout_constraintTop_toBottomOf="@+id/txvMostrarEditorial" />
+
+    <TextView
+        android:id="@+id/txvMostrarEditorial"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="53dp"
+        android:text="Editorial"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/txvMostrarFechaDePublicacion"
+        app:layout_constraintTop_toBottomOf="@+id/txvMostrarAutor" />
+
+    <TextView
+        android:id="@+id/txvEditorial2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="53dp"
+        android:text="Editorial:"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txvAutor2" />
+
+    <TextView
+        android:id="@+id/txvFechaDePublicacion2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:text="Fecha de publicacion:"
+        android:textSize="20sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txvMostrarFechaDePublicacion"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/txvAutor2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="44dp"
+        android:text="Autor:"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txvNombreDeLibro2" />
+
+    <TextView
+        android:id="@+id/txvNombreDeLibro2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="23dp"
+        android:text="Nombre de libro:"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtIngreseNumeroDeLibro" />
+
+    <Button
+        android:id="@+id/btnBuscar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="70dp"
+        android:backgroundTint="#3949AB"
+        android:text="Buscar"
+        android:textColor="#C6C5C5"
+        app:icon="?android:attr/actionModeWebSearchDrawable"
+        app:iconTint="#C6C5C5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
